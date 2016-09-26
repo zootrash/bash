@@ -99,3 +99,6 @@ alias cowsay='python ~/.scripts/cowsay-py-master/cowsay.py'
 
 #backup
 alias bk='~/.scripts/./bk.sh'
+
+#eve
+alias eve='~/.scripts/./eve.sh'
