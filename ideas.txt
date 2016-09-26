@@ -1,0 +1,6 @@
+## script ideas
+
+- batch renaming
+- auto removal of trash, caches, etc.
+- welcome msgs
+- personal AI 
