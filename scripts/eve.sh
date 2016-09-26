@@ -28,6 +28,6 @@ if [[ $RESPONSE == $REQ_TIME ]]; then
 elif [[ $RESPONSE == $REQ_DATE ]]; then
 	echo -e "${ai_color}Today's date is $DATE."
 else
-	echo "I'm sorry, I am unable to reply to your comment."
+	echo -e "${ai_color}I'm sorry, I am unable to reply to your comment."
 fi
 
