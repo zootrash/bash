@@ -3,6 +3,10 @@
 # personal ai
 # command: eve
 
+# env
+DATE=$(date +"%m-%d-%Y")
+TIME=$(date +"%r")
+
 # def text colors
 bldpur='\e[1;35m' # bold purple
 txtwht='\e[0;37m' # text white
@@ -17,10 +21,13 @@ echo -e "${u_color}"
 read RESPONSE
 
 # user wants to know the time
-REQ_TIME="time"
-if [ $RESPONSE == $REQ_TIME ]; then
-	echo "i found the word time"
+REQ_TIME=*"time"*
+REQ_DATE=*"date"*
+if [[ $RESPONSE == $REQ_TIME ]]; then
+	echo -e "${ai_color}The time is currently $TIME."
+elif [[ $RESPONSE == $REQ_DATE ]]; then
+	echo -e "${ai_color}Today's date is $DATE."
 else
-	echo "nope didnt work"
+	echo "I'm sorry, I can't answer that question."
 fi
 
