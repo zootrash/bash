@@ -69,7 +69,7 @@ welcomeDillon () {
 	color=$bldpur
 	echo -e "${color}Welcome back, Dillon."
 	echo
-	echo "Today is $DATE, and the time is $TIME"
+	echo "Today is $DATE, and the time is $TIME."
 	echo
 }
 
