@@ -23,11 +23,13 @@ read RESPONSE
 # user wants to know the time
 REQ_TIME=*"time"*
 REQ_DATE=*"date"*
+
 if [[ $RESPONSE == $REQ_TIME ]]; then
 	echo -e "${ai_color}The time is currently $TIME."
 elif [[ $RESPONSE == $REQ_DATE ]]; then
 	echo -e "${ai_color}Today's date is $DATE."
 else
+	
 	echo -e "${ai_color}I'm sorry, I am unable to reply to your comment."
 fi
 
