@@ -4,3 +4,4 @@
 - auto removal of trash, caches, etc.
 - welcome msgs
 - personal AI 
+- pw scrambler
