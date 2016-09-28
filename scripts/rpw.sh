@@ -3,49 +3,76 @@
 # generate a random password!
 # command: rpw
 
-# def ran upper, lower, number, and symbol arrays
-#RU_ARR="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-#RL_ARR="abcdefghijklmnopqrstuvwxyz"
-#RN_ARR="1234567890"
-#RS_ARR="!@#$%^&*()[];',./"
-R_ARR[0]="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-R_ARR[1]="abcdefghijklmnopqrstuvwxyz"
-R_ARR[2]="1234567890"
-R_ARR[3]="!@#$%^&*()[];',./"
+# def vars
+re='^[0-9]+$'			# regex for integer check
+lb=1							# lower bound for password length
+ub=12							# upper bound for password length
+N_ARR=4						# number of indicies for R_ARR
 
-# single random array, size 79
-#R_ARR="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()[];',./"
+R_ARR[0]="ABCDEFGHIJKLMNOPQRSTUVWXYZ"		# upper case array
+R_ARR[1]="abcdefghijklmnopqrstuvwxyz"		# lower case array
+R_ARR[2]="1234567890"										# integer array
+R_ARR[3]="!@#$%^&*()[];',./"						# symbol array
 
-# regex to check for integers
-# notice the single quotes
-re='^[0-9]+$'
+#R_ARR="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()[];',./"																	# single random array (size 79)
 
-# bounds for pw length
-lb=1
-ub=12
-
-# loop vars
-N_ARR=4
-
-# main
-echo "Enter the length of the generated password (max 12): "
-read PLEN
-
-# if plen is a number 
-# throw error if plen > 12 or not a number
-if ! [[ $PLEN =~ $re ]]; then
-	echo "Error: Not a number"
+### begin checks ###
+# argument check
+if [ $# -ne 1 ]; then
+	echo "Error: Must include one argument"
 	exit
-elif [ "$PLEN" -lt "$lb" -o "$PLEN" -gt "$ub" ]; then
-	echo "Error: Number is out of range."
-	exit
-else
-	echo "Valid number detected!"
-	echo "this is a test ${R_ARR[1]}"
 fi
 
-# two random generators
-# one for picking a line of the array
-# another for picking a random index within specfic array
-# begin loop
+# integer check
+if ! [[ $1 =~ $re ]]; then
+	echo "Error: Not a number"
+	exit
+fi
 
+# range check
+if [ "$1" -lt "$lb" -o "$1" -gt "$ub" ]; then
+	echo "Error: Must be in the range from 1 - 12."
+	exit
+fi
+### end checks ###
+
+### main ### 
+# generate random value for specific array
+DIFF=$(($1-$lb+1))
+RANDOM_PROC=$$
+RANDOM_SEC=$(date +"%S")
+
+# R = which index for main array to choose from
+# ARR_LEN = array length for specified R
+for i in `seq $1`
+do
+	R=$(($(($RANDOM_PROC%$N_ARR))))			# index for which array
+	ARR_LEN=${#R_ARR[$R]}								# array length for specified R
+	ARR_RAN=$ARR_LEN - 1
+	
+	for j in $(0 ($ARR_LEN - 1))
+	do
+		echo $j
+		
+		#R=$(($(($RANDOM%($N_ARR+1)))))
+	done
+done
+
+### end main ###
+
+### notes ###
+# integer check may need to change due to [[ ]] portability issues.
+
+# Brett Jennings came up with the RANDOM_SEC idea as a second random number
+# generator
+
+#stringz[0]="to" 
+#stringz[1]="pimp"
+#stringz[2]="a"
+#echo ${stringz[1]:1:1}
+
+	#for j in $(seq 0 3)
+	#do
+		
+		#R=$(($(($RANDOM%($N_ARR+1)))))
+	#done
