@@ -24,6 +24,9 @@ re='^[0-9]+$'
 lb=1
 ub=12
 
+# loop vars
+N_ARR=4
+
 # main
 echo "Enter the length of the generated password (max 12): "
 read PLEN
@@ -44,4 +47,5 @@ fi
 # two random generators
 # one for picking a line of the array
 # another for picking a random index within specfic array
+# begin loop
 
