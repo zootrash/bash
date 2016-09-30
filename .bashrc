@@ -102,3 +102,6 @@ alias bk='~/.scripts/./bk.sh'
 
 #eve
 alias eve='~/.scripts/./eve.sh'
+
+#pgen
+alias pgen='~/.scripts/pgen/./pgen.sh'
