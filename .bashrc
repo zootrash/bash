@@ -98,7 +98,7 @@ alias sl='~/.scripts/sl-master/./sl'
 alias cowsay='python ~/.scripts/cowsay-py-master/cowsay.py'
 
 #backup
-alias bk='~/.scripts/./bk.sh'
+alias bk='~/.scripts/bk/./bk.sh'
 
 #eve
 alias eve='~/.scripts/./eve.sh'
