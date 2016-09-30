@@ -1,0 +1,15 @@
+### notes ###
+
+$ future issues
+ - integer check may need to change due to [[ ]] portability issues.
+
+$ etc
+ - Brett Jennings came up with the RANDOM_SEC idea as a RNG.
+ - May insert between lines 41 and 42
+	#TARR_RAN=$(($TARR_LEN-1))						# array range
+
+	#TIND=$(($(($RG_IND%$TARR_RAN))))			# temporary random index
+
+$ update log
+
+	v1.0 [09/30/2016] : Creation of pgen!
