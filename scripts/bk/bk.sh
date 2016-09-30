@@ -1,8 +1,14 @@
 #!/bin/bash
+#
+# Generates a backup file or directory
+#
+####################################
+#
+# bk 1.0
+#
+####################################
 
-# backup your files or directories!
-# command: bk
-
+### main ###
 echo "Enter the file name or directory you wish to backup: "
 read FILE
 
@@ -17,3 +23,4 @@ elif [ -d $FILE ]; then
 else
 	echo "File $FILE does not exist."
 fi
+### end main ###

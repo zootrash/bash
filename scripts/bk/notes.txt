@@ -1,0 +1,5 @@
+### notes ###
+
+$ update log
+
+	v1.0 [09/28/2016] : Creation of bk!
