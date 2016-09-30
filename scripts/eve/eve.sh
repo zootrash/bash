@@ -1,7 +1,12 @@
 #!/bin/bash
-
-# personal ai
-# command: eve
+#
+# Eve: The personal and mysterious AI
+#
+########################################
+#
+# eve Pre-Alpha
+#
+########################################
 
 # env
 DATE=$(date +"%m-%d-%Y")
@@ -32,4 +37,3 @@ else
 	
 	echo -e "${ai_color}I'm sorry, I am unable to reply to your comment."
 fi
-

@@ -1,0 +1,5 @@
+### notes ###
+
+$ update log
+
+	[9/28/2016] : Began eve
