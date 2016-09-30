@@ -48,9 +48,9 @@ for i in `seq $1`
 do
 	R=$(($(($RANDOM_PROC%$N_ARR))))			# index for which array
 	ARR_LEN=${#R_ARR[$R]}								# array length for specified R
-	ARR_RAN=$ARR_LEN - 1
+	ARR_RAN=$(($ARR_LEN-1))							# array range
 	
-	for j in $(0 ($ARR_LEN - 1))
+	for j in $(seq 0 $ARR_RAN)
 	do
 		echo $j
 		
