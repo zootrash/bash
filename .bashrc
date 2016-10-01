@@ -101,7 +101,7 @@ alias cowsay='python ~/.scripts/cowsay-py-master/cowsay.py'
 alias bk='~/.scripts/bk/./bk.sh'
 
 #eve
-alias eve='~/.scripts/./eve.sh'
+alias eve='~/.scripts/eve/./eve.sh'
 
 #pgen
 alias pgen='~/.scripts/pgen/./pgen.sh'
