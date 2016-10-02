@@ -1,0 +1,59 @@
+### default ###
+blue
+darkblue
+default
+delek
+desert
+elflord
+evening
+industry
+koehler
+morning
+murphy
+pablo
+peachpuff
+ron
+shine
+slate
+torte
+zellner
+
+
+### dark ###
+babymate256 [x]
+badwolf x
+dracula x
+duotone-dark x
+duotone-darkcave x
+duotone-darkdesert x
+duotone-darkearth x
+duotone-darkforest x
+duotone-darkheath
+duotone-darklake x
+duotone-darkmeadow x
+duotone-darkpark x
+duotone-darkpool x
+duotone-darksea x
+duotone-darkspace x
+frozen x
+goodwolf x
+late_evening x
+monokai x
+nefertiti x
+neverland x
+neverland-darker x
+neverland2 x
+neverland2-darker x
+neverlandgui x
+rdark x
+seattle [x]
+sierra [x]
+sourcerer x
+thornbird x
+vice [ ]
+zenburn [x]
+
+### light ###
+
+gravity x
+mango x
