@@ -1,7 +1,10 @@
-## script ideas
+# script ideas
 
 - batch renaming
 - auto removal of trash, caches, etc.
+- extracting (see sample_extract.sh)
+https://www.reddit.com/r/linux/comments/12dkcj/what_are_some_cool_things_to_automate_with_shell/
+
+# in progress
 - welcome msgs
 - personal AI 
-- pw scrambler
