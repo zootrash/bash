@@ -48,6 +48,7 @@ neverlandgui x
 rdark x
 seattle [x]
 sierra [x]
+simple_dark [ ]
 sourcerer x
 thornbird x
 vice [ ]
