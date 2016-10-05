@@ -8,3 +8,9 @@ https://www.reddit.com/r/linux/comments/12dkcj/what_are_some_cool_things_to_auto
 # in progress
 - welcome msgs
 - personal AI 
+
+# completed
+- password gen
+- backup*
+
+* = could be modified for future use
