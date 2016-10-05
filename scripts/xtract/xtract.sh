@@ -18,7 +18,18 @@ fi
 
 # check if file exists
 if [ -f $1 ]; then
-	echo "yolo"
+	# select appr. extraction program
+	case $1 in
+		
+		# .tar.gz extraction
+		*.tar.gz)					tar -xvzf $1 
+		echo "tar.gz xtract success!"
+		;;
+
+		# invalid format
+		*)								echo "xtract failed: $1 is an invalid format." ;;
+
+	esac
 	# select appr. extraction program
 
 else
