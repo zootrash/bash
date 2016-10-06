@@ -1,5 +1,6 @@
 # script ideas
 
+- valgrind
 - batch renaming
 - auto removal of trash, caches, etc.
 - extracting (see sample_extract.sh)
