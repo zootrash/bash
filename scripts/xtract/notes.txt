@@ -1,5 +1,7 @@
 ### notes ###
 
+- fill in other extraction formats
+
 $ future issues
 
 $ etc
