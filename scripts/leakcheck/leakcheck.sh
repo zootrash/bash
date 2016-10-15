@@ -20,4 +20,5 @@ if [ -x $1 ]; then
 	`valgrind --tool=memcheck --leak-check=yes "./$1"`
 else
 	echo "Error: Either file does not exist or is not an executable"
+	exit
 fi
