@@ -5,7 +5,7 @@
 #
 ####################
 #
-# updlocss pre-alpha
+# updlocsh pre-alpha
 #
 ####################
 
