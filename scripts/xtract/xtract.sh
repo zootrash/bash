@@ -20,7 +20,7 @@ if [[ $# -eq 1 ]]; then
 			*.tar.gz)					tar -xvzf $1 -C $FILEDIR			# .tar.gz extraction
 			echo "xtract: tar.gz extraction success!" ;;
 
-			*.gz)							gunzip $1  # .gz extraction
+			*.gz)							gunzip -c $1  # .gz extraction
 			echo "xtract: .gz extraction success!" ;;
 
 			*)								echo "xtract: $1 is an invalid format. Extraction failed." ;;
