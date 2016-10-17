@@ -15,6 +15,7 @@ filedumprepo=~/Documents/git/filedump
 projrepo=~/Documents/git/proj
 pythonrepo=~/Documents/git/python
 resrcrepo=~/Documents/git/resrc
+sprepo=~/Documents/git/sp
 
 # bash
 cd $bashrepo
@@ -39,5 +40,9 @@ git pull $pythonrepo
 # resrc
 cd $resrcrepo
 git pull $resrcrepo
+
+# sp
+cd $sprepo
+git pull $sprepo
 
 exit
