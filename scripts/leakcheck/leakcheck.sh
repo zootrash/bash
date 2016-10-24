@@ -9,8 +9,8 @@
 ####################
 
 # argument check
-if [ $# -ne 1 ]; then
-	echo "Error: Must include one argument"
+if [ $# -eq 0 ]; then
+	echo "Error: Must include arguments"
 	exit
 fi
 
