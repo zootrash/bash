@@ -9,15 +9,15 @@
 ####################
 
 # argument check
-if [ $# -eq 0 ]; then
-	echo "Error: Must include arguments"
+if [ $# -ne 1 ]; then
+	echo "Error: Must include one argument"
 	exit
 fi
 
 # executable check
 if [ -x $1 ]; then
 	echo "Checking for any memory leaks..."
-	`valgrind --tool=memcheck --leak-check=yes "./$*"`
+	`valgrind --tool=memcheck --leak-check=yes "./$1"`
 else
 	echo "Error: Either file does not exist or is not an executable"
 	exit

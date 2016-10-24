@@ -1,6 +1,7 @@
 ### notes ###
 
 $ future issues
+- can only work for an executable with no arguments.
 
 $ etc
 
