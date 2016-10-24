@@ -17,7 +17,7 @@ fi
 # executable check
 if [ -x $1 ]; then
 	echo "Checking for any memory leaks..."
-	`valgrind --tool=memcheck --leak-check=yes "./$1"`
+	`valgrind --tool=memcheck --leak-check=yes "./$*"`
 else
 	echo "Error: Either file does not exist or is not an executable"
 	exit
