@@ -17,3 +17,7 @@ http://vimcolors.com/405/distill/dark
 http://vimcolors.com/403/oceandeep/dark
 
 
+
+favs;
+  lyla
+  sift
