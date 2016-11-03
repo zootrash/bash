@@ -4,7 +4,7 @@ syntax enable
 set number
 
 " Setting the color scheme
-colorscheme simple_dark
+colorscheme sift 
 
 " Setting the tabstops as actual spaces
 set tabstop=2
