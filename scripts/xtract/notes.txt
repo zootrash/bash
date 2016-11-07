@@ -7,3 +7,5 @@ $ future issues
 $ etc
 
 $ update log
+
+  - added zip extraction! - Nov 7, 2016

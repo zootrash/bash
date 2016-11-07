@@ -23,6 +23,9 @@ if [[ $# -eq 1 ]]; then
 			*.gz)							gunzip -d $1  # .gz extraction
 			echo "xtract: .gz extraction success!" ;;
 
+      *.zip)            unzip $1 -d $FILEDIR # .zip extracion
+      echo "xtract: .zip extraction success!" ;;
+
 			*)								echo "xtract: $1 is an invalid format. Extraction failed." ;;
 
 		esac
@@ -42,6 +45,9 @@ elif [[ $# -eq 2 ]]; then
 
 			*.gz)																						# .gz extraction 
 			echo "xtract: .gz extraction failed: unsupported destination directory." ;; 
+
+      *.zip)            unzip $1 -d $2                #.zip extraction
+      echo "xtract: .zip extraction success!" ;;
 
 			*)								echo "xtract: $1 is an invalid format. Extraction failed." ;;
 
