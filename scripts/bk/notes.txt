@@ -1,5 +1,23 @@
 ### notes ###
 
-$ update log
+$ bugs
+	- copying directories creates a .backup directory within
+		the backup directory itself
+		! #cp -r test/ test/.backup
+		- #cp -r test/ test.backup/
+			- both ways will end up the same (test vs test/)
+			- create/overwrite variable 'dir' as the $FILE string
+				length -1
 
-	v1.0 [09/28/2016] : Creation of bk!
+$ current
+	- want the file to be backed up as an argument
+	- multiple files
+
+$ future
+	- backup multiple files with a destination
+	- create a backup folder in current directory to store
+		backups in
+
+$ update log
+	- v2.0 ...
+	- v1.0 [09/28/2016] : Creation of bk!
