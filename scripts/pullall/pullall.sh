@@ -20,43 +20,43 @@ sprepo=~/Documents/git/sp
 # bash
 cd $bashrepo
 echo "Checking bash repo . . ."
-git pull origin master
+git pull 
 echo
 
 # c
 echo "Checking c repo . . ."
 cd $crepo
-git pull origin master
+git pull 
 echo
 
 # filedump
 cd $filedumprepo
 echo "Checking filedump repo . . ."
-git pull origin master
+git pull 
 echo
 
 # proj
 cd $projrepo
 echo "Checking proj repo . . ."
-git pull origin master
+git pull 
 echo
 
 # python
 echo "Checking python repo . . ."
 cd $pythonrepo
-git pull origin master
+git pull 
 echo
 
 # resrc
 echo "Checking resrc repo . . ."
 cd $resrcrepo
-git pull origin master
+git pull 
 echo
 
 # sp
 cd $sprepo
 echo "Checking sp repo . . ."
-git pull origin master
+git pull 
 echo
 
 exit
