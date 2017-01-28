@@ -1,17 +1,8 @@
 ### notes ###
 
 $ bugs
-	- copying directories creates a .backup directory within
-		the backup directory itself
-		! #cp -r test/ test/.backup
-		- #cp -r test/ test.backup/
-			- both ways will end up the same (test vs test/)
-			- create/overwrite variable 'dir' as the $FILE string
-				length -1
 
 $ current
-	- want the file to be backed up as an argument
-	- multiple files
 
 $ future
 	- backup multiple files with a destination
@@ -19,5 +10,8 @@ $ future
 		backups in
 
 $ update log
-	- v2.0 ...
-	- v1.0 [09/28/2016] : Creation of bk!
+	- v2.0 [01/27/2017] :
+			-> Backup files and directories as arguments
+			-> Fixed bug backing up directories with the "/" at the end
+	- v1.0 [09/28/2016] :
+			-> Creation of bk!
